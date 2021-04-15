@@ -3,7 +3,7 @@
 The website was done using the following skills:
 
 - HTML layout
-- Styling a page with CSS
+- Styling a page with SCSS
 - Working with the Git version control system
 - Application of naming and file structure of the BEM methodology
 - Flexbox
