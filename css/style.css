@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html,
 body,
 div,
@@ -168,14 +169,14 @@ select {
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -274,15 +275,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 39.9375em) {
   .social {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -291,7 +292,7 @@ body {
 }
 
 .header {
-  background-image: url(../../images/header-bg.jpg);
+  background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -311,20 +312,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 39.9375em) {
   .header__top {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -485,7 +486,7 @@ body {
 @media (max-width: 63.9375em) {
   .services__inner {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -544,8 +545,8 @@ body {
 @media (max-width: 63.9375em) {
   .services__list {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
     margin-bottom: 2rem;
     width: 100%;
   }
@@ -575,7 +576,7 @@ body {
 }
 
 .services__item::before {
-  content: "0" counter(my-counter);
+  content: "0"counter(my-counter);
   position: absolute;
   left: 30px;
   font-size: 2.25rem;
@@ -583,7 +584,7 @@ body {
   font-weight: 400;
   color: #C4C4C4;
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -840,8 +841,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 50px;
   list-style: none;
 }
@@ -873,8 +874,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 61.9375em) {
@@ -1008,11 +1009,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   height: 100px;
 }
@@ -1020,10 +1021,10 @@ body {
 @media (max-width: 61.9375em) {
   .footer__inner {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: auto;
     padding: 20px 0;
     text-align: center;
@@ -1044,7 +1045,7 @@ body {
 .footer__social {
   width: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 25px 0;
 }
