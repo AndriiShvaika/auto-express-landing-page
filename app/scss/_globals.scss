@@ -1,0 +1,102 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: $font-med; // 18px
+    line-height: 27px; // 27px
+    font-weight: 300;
+    color: $black;
+
+    @include breakpoint-down(small) {
+        font-size: $font-med;
+        line-height: 22px;
+    }
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    @include breakpoint-down(small) {
+        padding: 0 10px;
+    }
+}
+
+.title {
+    color: $branded;
+    font-size: $font-xlg;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+
+    @include breakpoint-down(small) {
+        text-align: center;
+    }
+
+    &::after {
+        content: '';
+        width: 80px;
+        height: 3px;
+        background-color: $branded;
+        position: absolute;
+        top: 22px;
+        margin-left: 20px;
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
+}
+
+.title-mobile {
+    color: $branded;
+    font-size: $font-xlg;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+
+    @include breakpoint-down(medium) {
+        text-align: center;
+    }
+
+    &::after {
+        content: '';
+        width: 80px;
+        height: 3px;
+        background-color: $branded;
+        position: absolute;
+        top: 22px;
+        margin-left: 20px;
+
+        @include breakpoint-down(medium) {
+            display: none;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint-down(small) {
+        justify-content: center;
+    }
+}
+
+.link {
+    margin-right: 10px;
+}

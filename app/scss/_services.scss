@@ -1,0 +1,178 @@
+.services {
+    padding-top: 350px;
+
+    @include breakpoint-down(large) {
+        padding-top: 250px;
+    }
+
+    @include breakpoint-down(small) {
+        padding-top: 50px;
+    }
+
+    &__inner {
+        display: flex;
+        margin-bottom: 100px;
+
+        @include breakpoint-down(large) {
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint-down(small) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__content {
+        width: 505px;
+        margin-right: 96px;
+
+        @include breakpoint-down(large) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
+    }
+
+    &__content-title {
+        color: $accent;
+        font-size: $font-med;
+        line-height: 27px;
+        font-weight: 300;
+        margin-bottom: 12px;
+
+        @include breakpoint-down(small) {
+            font-size: $font-lg;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__content-textbox {
+        margin-bottom: 57px;
+    }
+
+    &__content-text {
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        list-style: none;
+        counter-reset: my-counter;
+
+        @include breakpoint-down(large) {
+            order: -1;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__item {
+        counter-increment: my-counter;
+        border: 2px solid $grey;
+        margin-bottom: 12px;
+        width: 452px;
+        padding: 10px 15px 10px 113px;
+        position: relative;
+        transition: all .3s;
+
+        @include breakpoint-down(large) {
+            width: 100%;
+        }
+
+        @include breakpoint-down(small) {
+            padding: 10px 15px 10px 65px;
+        }
+
+        &::before {
+            content: '0'counter(my-counter);
+            position: absolute;
+            left: 30px;
+            font-size: $font-xlg;
+            line-height: 54px;
+            font-weight: 400;
+            color: $grey;
+            transform: rotate(270deg);
+            transition: all .3s;
+
+            @include breakpoint-down(small) {
+                left: 10px;
+            }
+        }
+
+        &:hover {
+            border: 2px solid $accent;
+            width: 500px;
+
+            .services__item-title {
+                color: $accent;
+            }
+
+            &::before {
+                color: $accent;
+            }
+
+            @include breakpoint-down(xlarge) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__item-title {
+        font-size: $font-lg;
+        font-weight: 300;
+
+        @include breakpoint-down(small) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__item-text {
+        @include breakpoint-down(small) {
+            font-size: 16px;
+        }
+    }
+}
+
+.button {
+
+    &.button--decor {
+        text-decoration: none;
+        margin-top: -7px;
+        color: $white;
+        border: 1px solid $accent;
+        position: relative;
+
+        &:hover {
+            color: $accent;
+            background-color: $white;
+        }
+
+        &::after {
+            content: 'ЖМИ';
+            color: $grey;
+            margin-left: 140px;
+            top: 15px;
+            position: absolute;
+
+            @include breakpoint-down(small) {
+                content: none;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: $grey;
+            position: absolute;
+            right: -75px;
+            top: 24px;
+
+            @include breakpoint-down(small) {
+                content: none;
+            }
+        }
+    }
+}
