@@ -3,7 +3,7 @@
 The website was done using the following skills:
 
 - HTML layout
-- Styling a page with SCSS
+- Styling a page with SCSS preprocessor
 - Slider with slick on Js
 - Working with the Git version control system
 - Application of naming and file structure of the BEM methodology
